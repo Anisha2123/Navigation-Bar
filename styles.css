@@ -1,0 +1,202 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Cormorant+SC:wght@300;700&family=Hi+Melody&family=Monoton&family=Prata&family=Raleway:wght@100&family=Rubik+Puddles&family=Stylish&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing:border-box;
+
+    
+}
+
+nav{
+    display: flex;
+    /* background-color: pink; */
+    background-color:#123C69;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+   }
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 0rem 1rem 0rem 2rem;
+}
+nav ul li{
+   margin: 0rem 0.5rem;
+   /* border: 1px solid black;  */
+   width:5rem;
+   display: flex;
+   justify-content: center;
+}
+nav ul li a{
+    color: wheat;
+    /* border: 1px solid black; */
+    font-family: 'Cormorant SC', serif;
+    transition: all 0.3s ease;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+
+}
+nav ul li:hover{
+    
+    
+    background-color:wheat ;
+    border-radius: 1rem 0.3rem 1rem 0.3rem;
+    
+}
+nav ul li a:hover{
+    color: #123C69;
+    font-weight: bolder; 
+    transition: all 0.3s ease;
+    
+}
+.logo{
+    color:rgb(186, 37, 72);
+    
+    font-size: 4rem;
+    margin-left: 3rem;
+    font-weight: bold;
+    font-family: 'Rubik Puddles', cursive;
+}
+.search{
+    
+    color: #123C69;
+    justify-content:center ;
+    width: 18rem;
+    border: none;
+    padding-left: 0.3rem;
+    border-radius: 3rem;
+    background-color: wheat;
+}
+.search:hover{
+    border: none;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:0%;
+    /* border: 1px solid black; */
+    width: 12rem;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    justify-content: center;
+    /* margin:0 auto; */
+    margin: 0rem 0.8rem ;
+}
+.box1{
+    object-fit: contain;
+ /* height:4rem; */
+ /* width: 10rem; */
+ display: block;
+ align-items: center;
+ margin-right: 1rem;
+ /* border: 1px solid black; */
+}
+#div1{
+    float: left;
+    
+    
+}
+#div2{
+    float: left;
+   
+}
+#div3{
+    float: right;
+    
+}
+.favicons{
+    display: flex;
+    /* color: wheat; */
+     color: rgb(186, 37, 72);  
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    height: 1.2rem;
+    width:1.5rem;
+    /* border: 1px solid black; */
+    padding: 0.1rem 0.1rem;
+}
+.profile{
+    font-family: 'Cormorant SC', serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: wheat;
+    /* border: 1px solid black; */
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding-top: 0rem;
+    height:0.6rem;
+}
+.second_box{
+    height:35rem;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(to right top, #123c69, #373e73, #573e78, #743c77, #8f3a71, rgb(163, 71, 112),
+     #b45770, #c26871, #cf8783, #daa69c, #e4c4b9, #eee2dc);
+}
+nav  .menu-btn i{
+    display: none;
+    font-size: 3rem;
+    color: wheat;
+    
+}
+nav #click{
+    display: none;
+}
+@media (max-width:940px){
+    #click:checked~ .menu-btn i:before{
+        content:"\f00d";
+    }
+    #click:checked~ ul{
+        left: 0%;
+    }
+    nav #click{
+        display: none;
+    }
+    nav  .menu-btn i{
+        display: block;
+        margin-right: 0rem;
+        margin-left: 26rem;;
+    }
+    nav ul li {
+        margin:2.5rem 10rem;
+        /* border: 1px solid black; */
+        width:10rem;
+
+    }
+    nav ul li a{
+        font-size: 2rem;
+        
+    }
+    nav ul{
+        position:fixed ;
+        top:4rem;
+        left:-100%;
+        display: block;
+        height:100vh;
+        background-color: #123C69;
+        text-align:center;
+        align-items: center;
+        width:100%;
+        transition:all 0.3s ease;
+    }
+    nav ul li:hover{
+        color:#123C69;
+        font-weight: bolder;
+        background-color:wheat;
+        transition: all 0.3s ease;
+        border-radius: 2rem 0.3rem 2rem 0.3rem;
+    }
+
+
+  
+}
+
